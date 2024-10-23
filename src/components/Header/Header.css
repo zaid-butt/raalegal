@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  width: 100%;
+  /* background-color: #f1f1f1; */
+  border-bottom: 2px solid gray;
+}
+
+.logo img {
+  width: 150px;
+  margin: 10px;
+}
+
+.counter {
+  margin: 3px;
+}
+.counter button {
+  font-size: 13px;
+  margin: 3px;
+  padding: 3px 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+
+.topright {
+  top: 20px;
+  right: 30px;
+}
+
+
+/********* Responsive start *********/
+@media screen and (max-width: 767px) {
+  .logo img {
+    width: 100px;
+  }
+
+}
+
+/********* Responsive End *********/
