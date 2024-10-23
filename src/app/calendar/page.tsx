@@ -1,31 +1,15 @@
 "use client"
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React from "react";
+import { Header } from "../../components/components";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 
 
 export default function Home() {
-    const [inputValue, setInputValue] = useState<string>('');
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevents the default form submission behavior
-    //alert(`Form submitted with: ${inputValue}`);
-    // Process the form data here
-    if (inputValue === "test@test.com"){
-       alert(`email is fine`);
-    } else {
-        alert(`Form submitted with: ${inputValue}`);
-    }
-  };
-
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
-  };
-
-
     return (
         <>
+        <Header />
         <div className="container d-flex justify-content-center align-items-center vh-100">
             <div className="card p-4" style={{ width: "22rem" }}>
                 <h3 className="text-center mb-4">
@@ -36,10 +20,10 @@ export default function Home() {
                         alt="logo"
                     />
                 </h3>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">Email address</label>
-                        <input type="email" className="form-control" id="email" placeholder="Enter email" value={inputValue} onChange={handleInputChange} />
+                        <input type="email" className="form-control" id="email" placeholder="Enter email" />
                     </div>
                     <div className="mb-3">
                         <label htmlFor="password" className="form-label">Password</label>
