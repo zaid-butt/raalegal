@@ -112,3 +112,17 @@ a {
 .useemail {
   color: #969696;
 }
+.small {
+  color: #969696;
+  font-size: 0.8rem !important;
+}
+.sticky {
+  display: block;
+  position: fixed;
+}
+.error_Msg {
+  display: block;
+  font-size: 13px;
+  color: red;
+  margin-bottom: 10px;
+}
