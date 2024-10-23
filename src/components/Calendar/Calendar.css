@@ -1,0 +1,17 @@
+.addevent-wrap {
+  display: block;
+  padding: 10px 50% 10px 7px;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(#f1f1f1, #fff);
+}
+
+.addevent-text {
+  padding: 10px 10px 0 0;
+}
+
+.rbc-today {
+  background-color: #19875421;
+}
+.rbc-event, .rbc-day-slot .rbc-background-event {
+  background-color: #ff3131;
+}

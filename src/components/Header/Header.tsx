@@ -19,9 +19,7 @@ export default function Header() {
           <Counter />
         </div>
 
-        <div className="topright">
-        topright
-        </div>
+       
 
       </header>
 

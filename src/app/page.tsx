@@ -12,7 +12,7 @@ export default function Home() {
     event.preventDefault(); // Prevents the default form submission behavior
     //alert(`Form submitted with: ${inputValue}`);
     // Process the form data here
-    if (inputValue === "test@test.com"){
+    if (inputValue === "ztest@test.com"){
        alert(`email is fine`);
     } else {
         alert(`Form submitted with: ${inputValue}`);
@@ -40,6 +40,7 @@ export default function Home() {
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label">Email address</label>
                         <input type="email" className="form-control" id="email" placeholder="Enter email" value={inputValue} onChange={handleInputChange} />
+                        <small className="useemail">Use this email ztest@test.com</small>
                     </div>
                     <div className="mb-3">
                         <label htmlFor="password" className="form-label">Password</label>
